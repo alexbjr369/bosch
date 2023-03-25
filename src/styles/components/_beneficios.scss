@@ -60,6 +60,11 @@
     }
   }
 
+  &__button {
+    background-color: transparent;
+    border: none;
+  }
+
   &__text {
     max-width: 28.5rem;
   }

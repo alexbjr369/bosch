@@ -10,7 +10,7 @@
     <main>
       <section class="banner">
         <div class="banner__container">
-          <a class="banner__link" href="#">
+          <a class="banner__link" target="_blank" href="https://www.boschferramentasabateria.com.br/linha-de-medicao/niveladores?utmi_p=catalog&utmi_pc=clique-Niveladores">
             <img class="image-responsive" src="./src/images/niveladores/banner.png" alt="Description" />
           </a>
         </div>
@@ -33,7 +33,7 @@
                 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et,
                 sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
               </p>
-              <a href="#" class="button product__button">Ver todos</a>
+              <a class="button product__button" target="_blank" href="https://www.boschferramentasabateria.com.br/linha-de-medicao/niveladores?utmi_p=catalog&utmi_pc=clique-Niveladores">Ver todos</a>
             </div>
           </div>
 
@@ -41,25 +41,33 @@
             <ul class="image-list__list">
               <li>
                 <figure class="image-list__figure">
-                  <img src="./src/images/niveladores/nivel-de-linha.png" alt="Description" />
+                  <a class="image-list__link" target="_blank" href="https://www.boschferramentasabateria.com.br/busca?ft=Nivelador+de+Linha">
+                    <img src="./src/images/niveladores/nivel-de-linha.png" alt="Description" />
+                  </a>
                   <figcaption class="image-list__caption">Nivelador de Linha</figcaption>
                 </figure>
               </li>
               <li>
                 <figure class="image-list__figure">
-                  <img src="./src/images/niveladores/nivel-rotativo.png" alt="Description" />
+                  <a class="image-list__link" target="_blank" href="https://www.boschferramentasabateria.com.br/busca?ft=Nivelador+Rotativo">
+                    <img src="./src/images/niveladores/nivel-rotativo.png" alt="Description" />
+                  </a>
                   <figcaption class="image-list__caption">Nivelador Rotativo</figcaption>
                 </figure>
               </li>
               <li>
                 <figure class="image-list__figure">
-                  <img src="./src/images/niveladores/nivel-otico.png" alt="Description" />
+                  <a class="image-list__link" target="_blank" href="https://www.boschferramentasabateria.com.br/busca?ft=Nivelador+Otico">
+                    <img src="./src/images/niveladores/nivel-otico.png" alt="Description" />
+                  </a>
                   <figcaption class="image-list__caption">Nivelador Ótico</figcaption>
                 </figure>
               </li>
               <li>
                 <figure class="image-list__figure">
-                  <img src="./src/images/niveladores/nivel-5-pontos.png" alt="Description" />
+                  <a class="image-list__link" target="_blank" href="https://www.boschferramentasabateria.com.br/busca?ft=Nivelador+de+5+pontos">
+                    <img src="./src/images/niveladores/nivel-5-pontos.png" alt="Description" />
+                  </a>
                   <figcaption class="image-list__caption">Nivelador de 5 Pontos</figcaption>
                 </figure>
               </li>
@@ -83,10 +91,10 @@
               conheça os benefícios de um nivelador a laser <span class="beneficios__heading-highlight">bosch:</span>
             </h2>
             <ul class="beneficios__list">
-              <li class="beneficios__item"><span class="beneficios__text">nivele longas distâncias em ambientes externos</span></li>
-              <li class="beneficios__item"><span class="beneficios__text">trava de pêndulo</span></li>
-              <li class="beneficios__item"><span class="beneficios__text">ponto de prumo</span></li>
-              <li class="beneficios__item"><span class="beneficios__text">prático e resistente</span></li>
+              <li class="beneficios__item"><button class="beneficios__button"><span class="beneficios__text">nivele longas distâncias em ambientes externos</span></button></li>
+              <li class="beneficios__item"><button class="beneficios__button"><span class="beneficios__text">trava de pêndulo</span></button></li>
+              <li class="beneficios__item"><button class="beneficios__button"><span class="beneficios__text">ponto de prumo</span></button></li>
+              <li class="beneficios__item"><button class="beneficios__button"><span class="beneficios__text">prático e resistente</span></button></li>
             </ul>
           </div>
         </div>
@@ -162,25 +170,42 @@
         <div class="acesso__container">
           <div>
             <figure class="acesso__figure">
-              <img class="image-responsive" src="./src/images/niveladores/materia-01.png" alt="Description" />
-              <div>
-                <figcaption class="acesso__caption">qual o melhor disco para cortar porcelanato</figcaption>
-                <a class="button" href="#">Aperte o play! </a>
+              <img class="image-responsive" src="./src/images/niveladores/acesso.png" alt="Description" />
+              <div class="acesso__content">
+                <figcaption class="acesso__caption">acesse nosso canal no youtube!</figcaption>
+                <a class="button acesso__button" href="#">Aperte o play! </a>
               </div>
             </figure>
           </div>
           <div>
             <figure class="acesso__figure">
-              <img class="image-responsive" src="./src/images/niveladores/materia-03.png" alt="Description" />
-              <div>
-                <figcaption class="acesso__caption">qual o melhor disco para cortar porcelanato</figcaption>
-                <a class="button" href="#">Comece o Quizz</a>
+              <img class="image-responsive" src="./src/images/niveladores/acesso.png" alt="Description" />
+              <div class="acesso__content">
+                <figcaption class="acesso__caption">
+                  descubra qual o melhor produto<br />
+                  para sua necessidade!
+                </figcaption>
+                <a class="button acesso__button" href="#">Comece o Quizz</a>
               </div>
             </figure>
           </div>
         </div>
       </section>
     </main>
+
+    <div class="modal" tabindex="-1" aria-labelledby="modal-01" aria-hidden="true">
+      <button class="modal__button">
+        <svg class="modal__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="13.6003" cy="13.6003" r="13.6003" fill="white"/>
+          <path d="M9.45777 7.82812L7.11536 10.0032L8.31148 11.1139L11.2686 13.9061L8.31148 16.6519L7.11536 17.7164L9.45777 19.9377L10.6539 18.827L13.6608 16.0349L16.6179 18.827L17.7642 19.9377L20.1565 17.7164L18.9603 16.6519L15.9534 13.9061L18.9603 11.1139L20.1565 10.0032L17.7642 7.82813L16.6179 8.93882L13.6608 11.6847L10.6539 8.93882L9.45777 7.82812Z" fill="#084179"/>
+        </svg>     
+      </button>
+      <h1 class="modal__content" id="modal-01">
+        Para fazer nivelamento em longas distâncias, utilize os <span class="modal__highlight">Niveladores a Laser Bosch</span> com seus receptores. Os
+        receptores detectam a linha do laser que não vemos a olho nu e mostram na tela a posição exata que a linha está passando. Você amplia, assim, o alcance
+        do seu Nivelador a Laser, garantindo a mesma precisão em longas distâncias e ao ar livre!
+      </p>
+    </div>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

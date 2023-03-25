@@ -1,0 +1,34 @@
+.modal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 50rem;
+  height: 30rem;
+  padding: 3.7rem;
+  background-color: var(--#{$namespace}-color-primary);
+
+  &__button {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__icon {
+  }
+
+  &__content {
+    color: var(--#{$namespace}-color-white);
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  &__highlight {
+    font-weight: 700;
+  }
+}
