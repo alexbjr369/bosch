@@ -1,0 +1,54 @@
+.product {
+  padding: 1.2rem 1rem 0 1rem;
+
+  &__container {
+    max-width: 114rem;
+    margin: 0 auto;
+    background-color: var(--#{$namespace}-color-gray-light);
+  }
+
+  &__heading-container {
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__heading {
+    color: var(--#{$namespace}-color-primary);
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+
+    &_desktop {
+    }
+  }
+
+  &__heading-highlight {
+    display: block;
+    color: var(--#{$namespace}-color-secondary);
+    text-transform: initial;
+  }
+
+  &__description {
+    flex: 1;
+    padding: 1.6rem 7.5rem 1.6rem 1.6rem;
+  }
+
+  &__overview {
+    display: flex;
+    align-items: center;
+  }
+
+  &__paragraph {
+    padding-top: 3.7rem;
+    color: var(--#{$namespace}-color-primary);
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  &__button {
+    width: 17rem;
+    height: 3.5rem;
+    margin-top: 5.4rem;
+  }
+}

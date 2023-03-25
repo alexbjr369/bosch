@@ -1,0 +1,29 @@
+:root {
+  --#{$namespace}-color-primary: #084179;
+  --#{$namespace}-color-secondary: #ff3434;
+  --#{$namespace}-color-gray-light: #f0f0f0;
+  --#{$namespace}-color-gray-medium: #5b5b5b;
+  --#{$namespace}-color-gray-dark: #1e1e1e;
+  --#{$namespace}-color-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-family: 'Bosch Sans';
+}

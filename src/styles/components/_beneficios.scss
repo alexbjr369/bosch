@@ -1,0 +1,66 @@
+.beneficios {
+  padding: 1.9rem 1rem 0 1rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    max-width: 110rem;
+    margin: 0 auto;
+  }
+
+  &__col {
+    flex: 1;
+
+    &:first-of-type {
+      flex: 0 0 50%;
+      padding-right: 6.3rem;
+    }
+  }
+
+  &__heading-container {
+    &_mobile {
+      display: none;
+    }
+  }
+
+  &__heading {
+    color: var(--#{$namespace}-color-primary);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+
+    &_desktop {
+    }
+  }
+
+  &__heading-highlight {
+    color: var(--#{$namespace}-color-secondary);
+  }
+
+  &__list {
+    padding-top: 1.1rem;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.8rem;
+    padding: 1.6rem;
+    color: var(--#{$namespace}-color-white);
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--#{$namespace}-color-secondary);
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__text {
+    max-width: 28.5rem;
+  }
+}

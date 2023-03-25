@@ -9,6 +9,15 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.6",
+    "sass": "^1.59.3",
+    "stylelint": "^15.3.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^6.0.3",
     "typescript": "^4.9.3",
     "vite": "^4.2.0"
   }

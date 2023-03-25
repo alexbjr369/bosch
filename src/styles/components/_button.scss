@@ -1,0 +1,8 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--#{$namespace}-color-white);
+  text-decoration: none;
+  background-color: var(--#{$namespace}-color-secondary);
+}
