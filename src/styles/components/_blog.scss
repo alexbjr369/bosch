@@ -1,0 +1,39 @@
+.blog {
+  padding: 3.2rem 1rem 0 1rem;
+
+  &__container {
+    max-width: 93rem;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    padding-bottom: 1rem;
+  }
+
+  &__header {
+    color: var(--#{$namespace}-color-primary);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  &__heading-container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__subheader {
+    color: var(--#{$namespace}-color-secondary);
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+
+  &__heading-link {
+    margin-left: auto;
+    padding-left: 1.6rem;
+    color: var(--#{$namespace}-color-primary);
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+}
