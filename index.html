@@ -10,7 +10,11 @@
     <main>
       <section class="banner">
         <div class="banner__container">
-          <a class="banner__link" target="_blank" href="https://www.boschferramentasabateria.com.br/linha-de-medicao/niveladores?utmi_p=catalog&utmi_pc=clique-Niveladores">
+          <a
+            class="banner__link"
+            target="_blank"
+            href="https://www.boschferramentasabateria.com.br/linha-de-medicao/niveladores?utmi_p=catalog&utmi_pc=clique-Niveladores"
+          >
             <img class="image-responsive" src="./src/images/niveladores/banner.png" alt="Description" />
           </a>
         </div>
@@ -33,7 +37,12 @@
                 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et,
                 sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
               </p>
-              <a class="button product__button" target="_blank" href="https://www.boschferramentasabateria.com.br/linha-de-medicao/niveladores?utmi_p=catalog&utmi_pc=clique-Niveladores">Ver todos</a>
+              <a
+                class="button product__button"
+                target="_blank"
+                href="https://www.boschferramentasabateria.com.br/linha-de-medicao/niveladores?utmi_p=catalog&utmi_pc=clique-Niveladores"
+                >Ver todos</a
+              >
             </div>
           </div>
 
@@ -91,10 +100,26 @@
               conheça os benefícios de um nivelador a laser <span class="beneficios__heading-highlight">bosch:</span>
             </h2>
             <ul class="beneficios__list">
-              <li class="beneficios__item"><button class="beneficios__button"><span class="beneficios__text">nivele longas distâncias em ambientes externos</span></button></li>
-              <li class="beneficios__item"><button class="beneficios__button"><span class="beneficios__text">trava de pêndulo</span></button></li>
-              <li class="beneficios__item"><button class="beneficios__button"><span class="beneficios__text">ponto de prumo</span></button></li>
-              <li class="beneficios__item"><button class="beneficios__button"><span class="beneficios__text">prático e resistente</span></button></li>
+              <li class="beneficios__item">
+                <button class="beneficios__button" data-target="modal-01">
+                  <span class="beneficios__text">nivele longas distâncias em ambientes externos</span>
+                </button>
+              </li>
+              <li class="beneficios__item">
+                <button class="beneficios__button" data-target="modal-02">
+                  <span class="beneficios__text">trava de pêndulo</span>
+                </button>
+              </li>
+              <li class="beneficios__item">
+                <button class="beneficios__button" data-target="modal-03">
+                  <span class="beneficios__text">ponto de prumo</span>
+                </button>
+              </li>
+              <li class="beneficios__item">
+                <button class="beneficios__button" data-target="modal-04">
+                  <span class="beneficios__text">prático e resistente</span>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -193,18 +218,72 @@
       </section>
     </main>
 
-    <div class="modal" tabindex="-1" aria-labelledby="modal-01" aria-hidden="true">
+    <div class="overlay hidden"></div>
+    <div class="modal hidden" id="modal-01" tabindex="-1" aria-labelledby="dialog-01" aria-hidden="true">
       <button class="modal__button">
-        <svg class="modal__icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="13.6003" cy="13.6003" r="13.6003" fill="white"/>
-          <path d="M9.45777 7.82812L7.11536 10.0032L8.31148 11.1139L11.2686 13.9061L8.31148 16.6519L7.11536 17.7164L9.45777 19.9377L10.6539 18.827L13.6608 16.0349L16.6179 18.827L17.7642 19.9377L20.1565 17.7164L18.9603 16.6519L15.9534 13.9061L18.9603 11.1139L20.1565 10.0032L17.7642 7.82813L16.6179 8.93882L13.6608 11.6847L10.6539 8.93882L9.45777 7.82812Z" fill="#084179"/>
-        </svg>     
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="13.6003" cy="13.6003" r="13.6003" fill="white" />
+          <path
+            d="M9.45777 7.82812L7.11536 10.0032L8.31148 11.1139L11.2686 13.9061L8.31148 16.6519L7.11536 17.7164L9.45777 19.9377L10.6539 18.827L13.6608 16.0349L16.6179 18.827L17.7642 19.9377L20.1565 17.7164L18.9603 16.6519L15.9534 13.9061L18.9603 11.1139L20.1565 10.0032L17.7642 7.82813L16.6179 8.93882L13.6608 11.6847L10.6539 8.93882L9.45777 7.82812Z"
+            fill="#084179"
+          />
+        </svg>
       </button>
-      <h1 class="modal__content" id="modal-01">
+      <h1 class="modal__content" id="dialog-01">
         Para fazer nivelamento em longas distâncias, utilize os <span class="modal__highlight">Niveladores a Laser Bosch</span> com seus receptores. Os
         receptores detectam a linha do laser que não vemos a olho nu e mostram na tela a posição exata que a linha está passando. Você amplia, assim, o alcance
         do seu Nivelador a Laser, garantindo a mesma precisão em longas distâncias e ao ar livre!
-      </p>
+      </h1>
+    </div>
+
+    <div class="modal hidden" id="modal-02" tabindex="-1" aria-labelledby="dialog-02" aria-hidden="true">
+      <button class="modal__button">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="13.6003" cy="13.6003" r="13.6003" fill="white" />
+          <path
+            d="M9.45777 7.82812L7.11536 10.0032L8.31148 11.1139L11.2686 13.9061L8.31148 16.6519L7.11536 17.7164L9.45777 19.9377L10.6539 18.827L13.6608 16.0349L16.6179 18.827L17.7642 19.9377L20.1565 17.7164L18.9603 16.6519L15.9534 13.9061L18.9603 11.1139L20.1565 10.0032L17.7642 7.82813L16.6179 8.93882L13.6608 11.6847L10.6539 8.93882L9.45777 7.82812Z"
+            fill="#084179"
+          />
+        </svg>
+      </button>
+      <h1 class="modal__content" id="dialog-02">
+        Os <span class="modal__highlight">Niveladores a Laser Bosch</span> possuem a tecnologia de trava de pêndulo, para preservar a calibragem do nível por
+        mais tempo. Ao transportar seu Nivelador a Laser, o pêndulo estará travado, aumentando a durabilidade e precisão da ferramenta por mais tempo.
+      </h1>
+    </div>
+
+    <div class="modal hidden" id="modal-03" tabindex="-1" aria-labelledby="dialog-03" aria-hidden="true">
+      <button class="modal__button">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="13.6003" cy="13.6003" r="13.6003" fill="white" />
+          <path
+            d="M9.45777 7.82812L7.11536 10.0032L8.31148 11.1139L11.2686 13.9061L8.31148 16.6519L7.11536 17.7164L9.45777 19.9377L10.6539 18.827L13.6608 16.0349L16.6179 18.827L17.7642 19.9377L20.1565 17.7164L18.9603 16.6519L15.9534 13.9061L18.9603 11.1139L20.1565 10.0032L17.7642 7.82813L16.6179 8.93882L13.6608 11.6847L10.6539 8.93882L9.45777 7.82812Z"
+            fill="#084179"
+          />
+        </svg>
+      </button>
+      <h1 class="modal__content" id="dialog-03">
+        Alinhamento perfeito entre o teto e o chão. Para facilitar ainda mais seu trabalho, alguns modelos de
+        <span class="modal__highlight">Niveladores a Laser Bosch</span> possuem pontos de prumo a laser, que te possibilitam fazer alinhamentos perfeitamente
+        perpendiculares entre o teto e o chão, facilitando diversos tipos de instalações.
+      </h1>
+    </div>
+
+    <div class="modal hidden" id="modal-04" tabindex="-1" aria-labelledby="dialog-04" aria-hidden="true">
+      <button class="modal__button">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="13.6003" cy="13.6003" r="13.6003" fill="white" />
+          <path
+            d="M9.45777 7.82812L7.11536 10.0032L8.31148 11.1139L11.2686 13.9061L8.31148 16.6519L7.11536 17.7164L9.45777 19.9377L10.6539 18.827L13.6608 16.0349L16.6179 18.827L17.7642 19.9377L20.1565 17.7164L18.9603 16.6519L15.9534 13.9061L18.9603 11.1139L20.1565 10.0032L17.7642 7.82813L16.6179 8.93882L13.6608 11.6847L10.6539 8.93882L9.45777 7.82812Z"
+            fill="#084179"
+          />
+        </svg>
+      </button>
+      <h1 class="modal__content" id="dialog-04">
+        Em uma obra, tempo é dinheiro! Por isso, com os <span class="modal__highlight">Niveladores a Laser Bosch</span>, você realiza marcações rápidas, na
+        horizontal ou na vertical, diminuindo seu tempo de trabalho. Os Niveladores a Laser, ainda, possuem revestimentos emborrachados resistentes para
+        aguentar qualquer condição e ambiente de obra. Em sua maioria, possuem certificados de proteção contra poeira e respingos de água.
+      </h1>
     </div>
 
     <script type="module" src="/src/main.ts"></script>

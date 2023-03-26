@@ -9,3 +9,13 @@
   color: transparent;
   font-size: 1px;
 }
+
+.hidden {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overflow-hidden {
+  overflow-y: hidden !important;
+}
