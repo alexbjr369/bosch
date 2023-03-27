@@ -18,6 +18,15 @@
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
 
+  &--overlay {
+    max-width: 80%;
+    height: 80%;
+    padding: 0;
+    background: transparent;
+    overflow: auto;
+    display: block;
+  }
+
   &__container {
     position: relative;
   }
@@ -55,4 +64,8 @@
   cursor: pointer;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
+}
+
+.modal-05 {
+
 }
