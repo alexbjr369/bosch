@@ -3,7 +3,7 @@ import './main.scss';
 const btnsOpenModalEl = document.querySelectorAll('.beneficios__button')!;
 const modalEl = document.querySelectorAll('.modal')!;
 const overlayEl = document.querySelector('.overlay')!;
-const btnCloseModalEl = document.querySelector('.modal__button')!;
+const btnCloseModalEl = document.querySelectorAll('.modal__button')!;
 
 const openModal = (target: string) => {
   const modalEl = document.querySelector(`#${target}`)!;
@@ -14,6 +14,8 @@ const openModal = (target: string) => {
 };
 
 const closeModal = () => {
+  console.log('fuck');
+
   for (let i = 0; i < modalEl.length; i++) {
     modalEl[i].classList.add('hidden');
   }
@@ -31,5 +33,8 @@ for (let i = 0; i < btnsOpenModalEl.length; i++) {
   });
 }
 
-btnCloseModalEl.addEventListener('click', closeModal);
+for (let i = 0; i < btnsOpenModalEl.length; i++) {
+  btnCloseModalEl[i].addEventListener('click', closeModal);
+}
+
 overlayEl.addEventListener('click', closeModal);
