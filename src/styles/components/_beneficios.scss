@@ -1,35 +1,67 @@
+@use 'sass:map';
+
 .beneficios {
   padding: 1.9rem 1rem 0 1rem;
+
+  @media (max-width: map.get($breakpoints, md)) {
+    padding: 1.7rem 0 0 0;
+  }
 
   &__container {
     display: flex;
     align-items: center;
     max-width: 110rem;
     margin: 0 auto;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      flex-direction: column;
+    }
   }
 
   &__col {
     flex: 1;
 
+    @media (max-width: map.get($breakpoints, md)) {
+      width: 100%;
+    }
+
     &:first-of-type {
+      @include fluid-property(padding-right, 0.1rem, 6.3rem);
       flex: 0 0 50%;
-      padding-right: 6.3rem;
+
+      @media (max-width: map.get($breakpoints, md)) {
+        flex: 1;
+        padding-right: 0;
+      }
     }
   }
 
   &__heading-container {
     &_mobile {
       display: none;
+      @include fluid-property(max-width, 30rem, 100%);
+
+      @media (max-width: map.get($breakpoints, md)) {
+        display: block;
+
+        margin: 0 auto;
+        padding-bottom: 1.8rem;
+      }
     }
   }
 
   &__heading {
+    @include fluid-property(font-size, 1.7rem, 2.5rem);
     color: var(--#{$namespace}-color-primary);
     font-weight: 700;
-    font-size: 2.5rem;
     text-transform: uppercase;
 
     &_desktop {
+      display: block;
+
+      @media (max-width: map.get($breakpoints, md)) {
+        display: none;
+      }
     }
   }
 
@@ -37,9 +69,18 @@
     color: var(--#{$namespace}-color-secondary);
   }
 
+  &__image {
+    margin: 0 auto;
+  }
+
   &__list {
     padding-top: 1.1rem;
     list-style: none;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
   }
 
   &__item {
@@ -54,15 +95,16 @@
   }
 
   &__button {
+    @include fluid-property(font-size, 1.2rem, 1.3rem);
+    @include fluid-property(height, 0.8rem, 1.8rem);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 1.8rem;
+
     padding: 1.6rem;
     color: var(--#{$namespace}-color-white);
     font-weight: 700;
-    font-size: 1.3rem;
     text-align: center;
     text-transform: uppercase;
     background-color: transparent;

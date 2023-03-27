@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 .product {
   padding: 1.2rem 1rem 0 1rem;
 
@@ -10,16 +12,25 @@
   &__heading-container {
     &_mobile {
       display: none;
+
+      @media (max-width: map.get($breakpoints, md)) {
+        display: block;
+      }
     }
   }
 
   &__heading {
+    @include fluid-property(font-size, 3rem, 3.5rem);
     color: var(--#{$namespace}-color-primary);
     font-weight: 900;
-    font-size: 3.5rem;
     text-transform: uppercase;
 
     &_desktop {
+      display: block;
+
+      @media (max-width: map.get($breakpoints, md)) {
+        display: none;
+      }
     }
   }
 
@@ -32,23 +43,42 @@
   &__description {
     flex: 1;
     padding: 1.6rem 7.5rem 1.6rem 1.6rem;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      padding: 0 0 2.1rem 0rem;
+    }
   }
 
   &__overview {
     display: flex;
     align-items: center;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      flex-direction: column;
+      align-items: initial;
+      padding: 2.5rem 2.2rem 0 2.2rem;
+    }
   }
 
   &__paragraph {
+    @include fluid-property(font-size, 1.3rem, 1.8rem);
     padding-top: 3.7rem;
     color: var(--#{$namespace}-color-primary);
     font-weight: 700;
-    font-size: 1.8rem;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      padding-top: 0;
+    }
   }
 
   &__button {
-    width: 17rem;
-    height: 3.5rem;
+    @include fluid-property(font-size, 1.3rem, 1.6rem);
+    @include fluid-property(width, 13.3rem, 17rem);
+    @include fluid-property(height, 2.7rem, 3.5rem);
     margin-top: 5.4rem;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      margin-top: 2.1rem;
+    }
   }
 }

@@ -3,4 +3,49 @@
   align-items: center;
   max-width: 98.7rem;
   margin: 0 auto;
+
+  &__left {
+  }
+
+  &__center {
+  }
+
+  &__right {
+  }
+
+  &__heading {
+    @include fluid-property(font-size, 3rem, 4.2rem);
+    padding-bottom: 1.5rem;
+    color: var(--#{$namespace}-color-primary);
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__paragraph {
+    @include fluid-property(font-size, 1.4rem, 1.8rem);
+    padding-bottom: 3.5rem;
+    color: var(--#{$namespace}-color-primary);
+    line-height: 150%;
+  }
+
+  &__highlight {
+    font-weight: 700;
+  }
+
+  &__terceiros {
+    @include fluid-property(font-size, 1.2rem, 1.8rem);
+    color: var(--#{$namespace}-color-primary);
+    line-height: 150%;
+  }
+}
+
+.qr-code {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  width: 26.5rem;
+  padding: 1.3rem 1.5rem;
+  color: var(--#{$namespace}-color-white);
+  line-height: 150%;
+  background-color: var(--#{$namespace}-color-primary);
 }

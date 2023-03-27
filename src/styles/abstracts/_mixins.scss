@@ -1,8 +1,11 @@
-@mixin fluid-property($property, $min-value, $max-value, $min-viewport: 320px, $max-viewport: 1440px) {
+@mixin fluid-property($property, $min-value, $max-value, $min-viewport: 360px, $max-viewport: 1440px) {
   #{$property}: $min-value;
 
   @media (min-width: #{$min-viewport}) {
-    #{$property}: calc(#{$min-value} + (#{strip-unit($max-value)} * 10 - #{strip-unit($min-value)} * 10) * ((100vw - #{$min-viewport}) / (#{strip-unit($max-viewport)} - #{strip-unit($min-viewport)})));
+    #{$property}: calc(
+      #{$min-value} + (#{strip-unit($max-value)} * 10 - #{strip-unit($min-value)} * 10) * ((100vw - #{$min-viewport}) /
+            (#{strip-unit($max-viewport)} - #{strip-unit($min-viewport)}))
+    );
   }
 
   @media (min-width: #{$max-viewport}) {

@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 .blog {
   padding: 3.2rem 1rem 0 1rem;
 
@@ -11,6 +13,7 @@
   }
 
   &__header {
+    @include fluid-property(font-size, 1.3rem, 2.5rem);
     color: var(--#{$namespace}-color-primary);
     font-weight: 700;
     font-size: 2.5rem;
@@ -23,17 +26,17 @@
   }
 
   &__subheader {
+    @include fluid-property(font-size, 1.3rem, 2.5rem);
     color: var(--#{$namespace}-color-secondary);
     font-weight: 500;
-    font-size: 2.5rem;
   }
 
   &__heading-link {
+    @include fluid-property(font-size, 0.9rem, 2rem);
     margin-left: auto;
     padding-left: 1.6rem;
     color: var(--#{$namespace}-color-primary);
     font-weight: 700;
-    font-size: 2rem;
     text-decoration: none;
   }
 }

@@ -1,12 +1,18 @@
+@use 'sass:map';
+
 .outros {
   padding: 3rem 1rem 0 1rem;
 
   &__container {
+    @include fluid-property(gap, 1.3rem, 2rem);
     display: flex;
-    gap: 2rem;
     align-items: center;
     max-width: 112rem;
     margin: 0 auto;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      flex-direction: column;
+    }
   }
 
   &__link {

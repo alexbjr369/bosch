@@ -1,23 +1,23 @@
 .image-mosaic {
+  @include fluid-property(gap, 0.731rem, 2rem);
   display: flex;
-  gap: 2rem;
 
   &__figure {
     position: relative;
 
     &:nth-last-of-type(2) {
-      margin-bottom: 2rem;
+      @include fluid-property(margin-bottom, 0.731rem, 2rem);
     }
   }
 
   &__caption {
+    @include fluid-property(font-size, 1rem, 2.5rem);
+    @include fluid-property(padding-right, 0.5rem, 1.6rem);
+    @include fluid-property(left, 0.5rem, 1.7rem);
+    @include fluid-property(bottom, 0.5rem, 1.1rem);
     position: absolute;
-    bottom: 1.1rem;
-    left: 1.7rem;
-    padding-right: 1.6rem;
     color: var(--#{$namespace}-color-white);
     font-weight: 700;
-    font-size: 2.5rem;
     text-transform: uppercase;
   }
 }

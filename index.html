@@ -22,11 +22,10 @@
 
       <section class="product">
         <div class="product__container">
-          <div class="product__heading-container product__heading-container_mobile">
-            <h2 class="product__heading">Niveladores <span>Bosch</span></h2>
-          </div>
-
           <div class="product__overview">
+            <div class="product__heading-container product__heading-container_mobile">
+              <h2 class="product__heading">Niveladores <span class="product__heading-highlight">Bosch</span></h2>
+            </div>
             <div>
               <img class="image-responsive" src="./src/images/niveladores/product-01.png" alt="Niveladores Bosch" />
             </div>
@@ -92,7 +91,7 @@
               <h2 class="beneficios__heading">conheça os benefícios de um nivelador a laser <span class="beneficios__heading-highlight">bosch:</span></h2>
             </div>
 
-            <img class="image-responsive" src="./src/images/niveladores/beneficios-01.png" alt="Description" />
+            <img class="image-responsive beneficios__image" src="./src/images/niveladores/beneficios-01.png" alt="Description" />
           </div>
 
           <div class="beneficios__col">
@@ -144,7 +143,39 @@
         </div>
       </section>
 
-      <section class="conectividade"></section>
+      <section class="conectividade">
+        <div class="conectividade__left">
+          <h2 class="conectividade__heading">conectividade</h2>
+          <p class="conectividade__paragraph">
+            Trabalhe mais rápido usando seu celular: use o <span class="conectividade__highlight">aplicativo Bosch</span> ou APPs parceiros para criar projetos,
+            plantas baixas e até fotos com medidas.
+          </p>
+          <h3 class="conectividade__terceiros">APPs parceiros:</h3>
+          <img class="image-responsive" src="./src/images/niveladores/parceiros.png" alt="APPs parceiros" />
+        </div>
+        <div class="conectividade__center">
+          <img class="image-responsive" src="./src/images/niveladores/conectividade.png" alt="Description" />
+        </div>
+        <div class="conectividade__right">
+          <div class="qr-code">
+            <p>Escaneie aqui com a câmera do seu celular</p>
+            <img src="./src/images/niveladores/qr-code.png" alt="Description" />
+          </div>
+
+          <ul class="conectividade__list">
+            <li>
+              <a href="#" target="_blank">
+                <img class="image-responsive" src="./src/images/niveladores/google-play.png" alt="google play" />
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img class="image-responsive" src="./src/images/niveladores/app-store.png" alt="app store" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="saiba-mais">
         <div class="saiba-mais__container">
@@ -166,25 +197,31 @@
             <h2 class="blog__header">matérias mais recentes</h2>
             <div class="blog__heading-container">
               <h3 class="blog__subheader">Blog da Bosch</h3>
-              <a class="blog__heading-link" href="#">Ver todos os conteúdos ></a>
+              <a class="blog__heading-link" href="https://www.boschalemdaferramenta.com.br/" target="_blank">Ver todos os conteúdos ></a>
             </div>
           </div>
 
           <div class="image-mosaic">
             <div>
               <figure class="image-mosaic__figure">
-                <img class="image-responsive" src="./src/images/niveladores/materia-01.png" alt="Description" />
-                <figcaption class="image-mosaic__caption">qual o melhor disco para cortar porcelanato</figcaption>
+                <a href="https://www.boschalemdaferramenta.com.br/qual-o-melhor-disco-para-cortar-porcelanato" target="_blank">
+                  <img class="image-responsive" src="./src/images/niveladores/materia-01.png" alt="Description" />
+                  <figcaption class="image-mosaic__caption">qual o melhor disco para cortar porcelanato</figcaption>
+                </a>
               </figure>
             </div>
             <div>
               <figure class="image-mosaic__figure">
-                <img class="image-responsive" src="./src/images/niveladores/materia-02.png" alt="Description" />
-                <figcaption class="image-mosaic__caption">qual a melhor broca para furar aço</figcaption>
+                <a href="https://www.boschalemdaferramenta.com.br/qual-melhor-broca-para-furar-aco" target="_blank">
+                  <img class="image-responsive" src="./src/images/niveladores/materia-02.png" alt="Description" />
+                  <figcaption class="image-mosaic__caption">qual a melhor broca para furar aço</figcaption>
+                </a>
               </figure>
               <figure class="image-mosaic__figure">
-                <img class="image-responsive" src="./src/images/niveladores/materia-03.png" alt="Description" />
-                <figcaption class="image-mosaic__caption">nível a laser: saiba como usar na construção civil</figcaption>
+                <a href="https://www.boschalemdaferramenta.com.br/nivel-laser-como-usar-na-construcao-civil" target="_blank">
+                  <img class="image-responsive" src="./src/images/niveladores/materia-03.png" alt="Description" />
+                  <figcaption class="image-mosaic__caption">nível a laser: saiba como usar na construção civil</figcaption>
+                </a>
               </figure>
             </div>
           </div>
@@ -193,26 +230,17 @@
 
       <section class="acesso">
         <div class="acesso__container">
-          <div>
-            <figure class="acesso__figure">
-              <img class="image-responsive" src="./src/images/niveladores/acesso.png" alt="Description" />
-              <div class="acesso__content">
-                <figcaption class="acesso__caption">acesse nosso canal no youtube!</figcaption>
-                <a class="button acesso__button" href="#">Aperte o play! </a>
-              </div>
-            </figure>
+          <div class="acesso__col">
+            <a class="acesso__link" href="https://www.youtube.com/channel/UC0hMpewzx1yrfakKvEwqiBw" target="_blank">
+              <h2 class="seo">acesse nosso canal no youtube! Aperte o play!</h2>
+              <img class="image-responsive" src="./src/images/niveladores/acesso-01.png" alt="Description" />
+            </a>
           </div>
-          <div>
-            <figure class="acesso__figure">
-              <img class="image-responsive" src="./src/images/niveladores/acesso.png" alt="Description" />
-              <div class="acesso__content">
-                <figcaption class="acesso__caption">
-                  descubra qual o melhor produto<br />
-                  para sua necessidade!
-                </figcaption>
-                <a class="button acesso__button" href="#">Comece o Quizz</a>
-              </div>
-            </figure>
+          <div class="acesso__col">
+            <a class="acesso__link" href="#" target="_blank">
+              <h2 class="seo">descubra qual o melhor produto para sua necessidade! Comece o Quizz</h2>
+              <img class="image-responsive" src="./src/images/niveladores/acesso-02.png" alt="Description" />
+            </a>
           </div>
         </div>
       </section>
