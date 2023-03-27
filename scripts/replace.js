@@ -1,7 +1,7 @@
 import replace from 'replace-in-file';
 
 const options = {
-  files: 'dist/index.html',
+  files: 'dist/*.html',
   from: /assets/g,
   to: 'https://boschferramentasbrasil.vteximg.com.br/arquivos',
 };

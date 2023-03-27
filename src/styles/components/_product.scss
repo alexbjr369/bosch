@@ -60,6 +60,14 @@
     }
   }
 
+  &__subheading {
+    @include fluid-property(font-size, 1.6rem, 2.2rem);
+    padding-top: 6.7rem;
+    color: var(--#{$namespace}-color-primary);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
   &__paragraph {
     @include fluid-property(font-size, 1.3rem, 1.8rem);
     padding-top: 3.7rem;
@@ -68,6 +76,11 @@
 
     @media (max-width: map.get($breakpoints, md)) {
       padding-top: 0;
+    }
+
+    &_detectores {
+      padding-top: 1rem;
+      font-weight: 500;
     }
   }
 
