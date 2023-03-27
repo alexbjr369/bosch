@@ -19,19 +19,14 @@
   }
 
   &__col {
-    flex: 1;
-
-    @media (max-width: map.get($breakpoints, md)) {
-      width: 100%;
-    }
-
-    &:first-of-type {
-      @include fluid-property(padding-right, 0.1rem, 6.3rem);
-      flex: 0 0 50%;
+    &:nth-of-type(2) {
+      @include fluid-property(margin-left, 1.6rem, 6.3rem);
+      max-width: 42.8rem;
 
       @media (max-width: map.get($breakpoints, md)) {
-        flex: 1;
-        padding-right: 0;
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
       }
     }
   }
@@ -43,7 +38,6 @@
 
       @media (max-width: map.get($breakpoints, md)) {
         display: block;
-
         margin: 0 auto;
         padding-bottom: 1.8rem;
       }
@@ -69,10 +63,6 @@
     color: var(--#{$namespace}-color-secondary);
   }
 
-  &__image {
-    margin: 0 auto;
-  }
-
   &__list {
     padding-top: 1.1rem;
     list-style: none;
@@ -96,12 +86,11 @@
 
   &__button {
     @include fluid-property(font-size, 1.2rem, 1.3rem);
-    @include fluid-property(height, 0.8rem, 1.8rem);
+    @include fluid-property(height, 4rem, 5rem);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-
     padding: 1.6rem;
     color: var(--#{$namespace}-color-white);
     font-weight: 700;

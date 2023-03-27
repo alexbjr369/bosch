@@ -1,16 +1,39 @@
+@use 'sass:map';
+
 .conectividade {
   display: flex;
   align-items: center;
   max-width: 98.7rem;
   margin: 0 auto;
+  padding: 2.2rem 1rem;
+
+  @media (max-width: map.get($breakpoints, md)) {
+    flex-direction: column;
+    padding: 2.2rem 3.2rem;
+  }
 
   &__left {
+    flex: 1;
   }
 
   &__center {
+    &_desktop {
+      display: block;
+
+      @media (max-width: map.get($breakpoints, md)) {
+        display: none;
+      }
+    }
   }
 
   &__right {
+    &_desktop {
+      display: block;
+
+      @media (max-width: map.get($breakpoints, md)) {
+        display: none;
+      }
+    }
   }
 
   &__heading {
@@ -26,6 +49,20 @@
     padding-bottom: 3.5rem;
     color: var(--#{$namespace}-color-primary);
     line-height: 150%;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__terceiros-container {
+    &_desktop {
+      display: block;
+
+      @media (max-width: map.get($breakpoints, md)) {
+        display: none;
+      }
+    }
   }
 
   &__highlight {
@@ -36,7 +73,50 @@
     @include fluid-property(font-size, 1.2rem, 1.8rem);
     color: var(--#{$namespace}-color-primary);
     line-height: 150%;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      padding-top: 2.4rem;
+      padding-bottom: 0.5rem;
+    }
   }
+
+  &__baixe {
+    padding-top: 2.3rem;
+    color: var(--#{$namespace}-color-primary);
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+
+  &__list {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    padding-top: 2rem;
+    list-style: none;
+
+    &_desktop {
+      display: block;
+
+      @media (max-width: map.get($breakpoints, md)) {
+        display: none;
+      }
+    }
+  }
+}
+
+.conectividade-mobile {
+  display: none;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+
+  @media (max-width: map.get($breakpoints, md)) {
+    display: flex;
+  }
+}
+
+.terceiros-mobile {
+  padding-bottom: 1rem;
 }
 
 .qr-code {
