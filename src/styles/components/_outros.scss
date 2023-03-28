@@ -18,4 +18,10 @@
   &__link {
     display: block;
   }
+
+  &_detectores {
+    @media (max-width: map.get($breakpoints, md)) {
+      padding-top: 1.3rem;
+    }
+  }
 }

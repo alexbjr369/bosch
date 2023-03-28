@@ -19,3 +19,7 @@
 .overflow-hidden {
   overflow-y: hidden !important;
 }
+
+.help__floater.js-visible {
+  z-index: 1;
+}

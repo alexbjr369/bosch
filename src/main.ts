@@ -1,6 +1,6 @@
 import './main.scss';
 
-const btnsOpenModalEl = document.querySelectorAll('.beneficios__button')!;
+const btnsOpenModalEl = document.querySelectorAll('#open-modal')!;
 const modalEl = document.querySelectorAll('.modal')!;
 const overlayEl = document.querySelector('.overlay')!;
 const btnCloseModalEl = document.querySelectorAll('.modal__button')!;
@@ -14,8 +14,6 @@ const openModal = (target: string) => {
 };
 
 const closeModal = () => {
-  console.log('fuck');
-
   for (let i = 0; i < modalEl.length; i++) {
     modalEl[i].classList.add('hidden');
   }
@@ -26,7 +24,7 @@ const closeModal = () => {
 
 for (let i = 0; i < btnsOpenModalEl.length; i++) {
   btnsOpenModalEl[i].addEventListener('click', (event) => {
-    const buttonEl = (event?.target as HTMLButtonElement).closest('.beneficios__button')!;
+    const buttonEl = (event?.target as HTMLButtonElement).closest('#open-modal')!;
     const modalTargetId = (buttonEl as HTMLButtonElement).dataset.target!;
 
     openModal(modalTargetId);

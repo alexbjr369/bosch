@@ -1,0 +1,35 @@
+@use 'sass:map';
+
+.compare {
+  align-items: center;
+  max-width: 112rem;
+  margin: 0 auto;
+  margin-top: 3.6rem;
+  padding: 0 1rem;
+
+  @media (max-width: map.get($breakpoints, md)) {
+    margin-top: 1.3rem;
+  }
+
+  &__desktop {
+    display: block;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+    max-width: 55rem;
+    margin: 0 auto;
+
+    @media (max-width: map.get($breakpoints, md)) {
+      display: block;
+    }
+  }
+
+  img {
+    cursor: pointer;
+  }
+}
