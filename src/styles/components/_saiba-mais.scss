@@ -52,8 +52,8 @@
 
   &__button {
     @include fluid-property(font-size, 1rem, 1.6rem);
-    width: 31.2rem;
-    height: 4.3rem;
+    @include fluid-property(width, 18.1rem, 31.2rem);
+    @include fluid-property(height, 1.9rem, 4.3rem);
     text-transform: uppercase;
   }
 }

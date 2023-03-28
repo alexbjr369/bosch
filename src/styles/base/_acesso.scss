@@ -1,10 +1,7 @@
 @use 'sass:map';
 
 .acesso {
-  @include fluid-property(padding-top, 0.825rem, 2rem);
-  padding-right: 1rem;
-  padding-bottom: 2rem;
-  padding-left: 1rem;
+  padding: 2rem 1rem;
 
   &__container {
     @include fluid-property(gap, 1.3rem, 2rem);

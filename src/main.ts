@@ -31,8 +31,10 @@ for (let i = 0; i < btnsOpenModalEl.length; i++) {
   });
 }
 
+overlayEl.addEventListener('click', () => {
+  closeModal();
+});
+
 for (let i = 0; i < btnsOpenModalEl.length; i++) {
   btnCloseModalEl[i].addEventListener('click', closeModal);
 }
-
-overlayEl.addEventListener('click', closeModal);

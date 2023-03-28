@@ -25,11 +25,13 @@
 
   &--overlay {
     display: block;
-    max-width: 80%;
-    height: 80%;
+    width: calc(100% - 3rem);
+    max-width: 80rem;
+    height: auto;
+    max-height: 50rem;
     padding: 0;
     overflow: auto;
-    background: transparent;
+    background: #fff;
   }
 
   &__container {
@@ -58,6 +60,22 @@
 
   &__image {
     margin-top: 3rem;
+  }
+
+  &__image-desktop {
+    display: block;
+
+    @media (max-width: map.get($breakpoints, sm)) {
+      display: none;
+    }
+  }
+
+  &__image-mobile {
+    display: none;
+
+    @media (max-width: map.get($breakpoints, sm)) {
+      display: block;
+    }
   }
 }
 
