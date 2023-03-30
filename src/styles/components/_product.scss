@@ -73,6 +73,7 @@
     padding-top: 3.7rem;
     color: var(--#{$namespace}-color-primary);
     font-weight: 700;
+    font-style: normal !important;
 
     @media (max-width: map.get($breakpoints, md)) {
       padding-top: 0;

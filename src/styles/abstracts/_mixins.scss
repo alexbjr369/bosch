@@ -1,4 +1,4 @@
-@mixin fluid-property($property, $min-value, $max-value, $min-viewport: 360px, $max-viewport: 1440px) {
+@mixin fluid-property($property, $min-value, $max-value, $min-viewport: 340px, $max-viewport: 1440px) {
   #{$property}: $min-value;
 
   @media (min-width: #{$min-viewport}) {

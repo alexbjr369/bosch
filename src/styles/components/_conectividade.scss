@@ -38,17 +38,26 @@
 
   &__heading {
     @include fluid-property(font-size, 3rem, 4.2rem);
-    padding-bottom: 1.5rem;
     color: var(--#{$namespace}-color-primary);
     font-weight: 900;
     text-transform: uppercase;
   }
 
+  &__subheading {
+    padding-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
   &__paragraph {
     @include fluid-property(font-size, 1.4rem, 1.8rem);
-    padding-bottom: 3.5rem;
+    padding-bottom: 1.5rem;
     color: var(--#{$namespace}-color-primary);
     line-height: 150%;
+  }
+
+  &__subparagraph {
+    padding-bottom: 3.5rem;
 
     @media (max-width: map.get($breakpoints, md)) {
       padding-bottom: 0;
@@ -71,12 +80,12 @@
 
   &__terceiros {
     @include fluid-property(font-size, 1.2rem, 1.8rem);
+    padding-bottom: 0.5rem;
     color: var(--#{$namespace}-color-primary);
     line-height: 150%;
 
     @media (max-width: map.get($breakpoints, md)) {
       padding-top: 2.4rem;
-      padding-bottom: 0.5rem;
     }
   }
 
@@ -112,6 +121,7 @@
 
   @media (max-width: map.get($breakpoints, md)) {
     display: flex;
+    padding-top: 2rem;
   }
 }
 
@@ -128,4 +138,9 @@
   color: var(--#{$namespace}-color-white);
   line-height: 150%;
   background-color: var(--#{$namespace}-color-primary);
+
+  img {
+    width: 12.5rem;
+    min-height: 12.5rem;
+  }
 }
