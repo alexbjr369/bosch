@@ -18,12 +18,12 @@
             <h1 class="seo">TRENA A LASER BOSCH</h1>
             <img
               class="image-responsive banner__image_desktop"
-              src="./src/images/medidores/banner-desktop.png"
+              src="./src/images/medidores/medidores-banner-desktop.png"
               alt="TRENA A LASER BOSCH - Medidores Bosch agilizam seu trabalho: com apenas um clique e absoluta precisão"
             />
             <img
               class="image-responsive banner__image_mobile"
-              src="./src/images/medidores/banner-mobile.png"
+              src="./src/images/medidores/medidores-banner-mobile.png"
               alt="TRENA A LASER BOSCH - Medidores Bosch agilizam seu trabalho: com apenas um clique e absoluta precisão"
             />
           </a>
@@ -142,7 +142,16 @@
       </section>
 
       <section class="slider">
-        <h2 class="seo">CONFIRA A LINHA MAIS COMPLETA DE TRENAS A LASER BOSCH</h2>
+        <div class="landing__shelf area area__container">
+          <div class="landing__container">
+            <div class="landing__shelf--title">
+              <h2>CONFIRA A LINHA MAIS COMPLETA DE TRENAS A LASER BOSCH</h2>
+            </div>
+            <div class="landing__shelf--list">
+              <vtex:contentPlaceHolder id="Default-Shelf-Top" />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="outros">
@@ -218,7 +227,7 @@
         </div>
       </section>
 
-      <div class="interativo landing__interactive area area__container">
+      <div class="landing__interactive area area__container">
         <div class="landing__container">
           <div class="interactive__title">
             <h2>
@@ -324,14 +333,49 @@
         </div>
       </section>
 
-      <section class="acesso">
-        <div class="acesso__container">
-          <a class="acesso__link" href="#" target="_blank">
-            <h2 class="seo">QUAL O MELHOR PRODUTO PARA MIM?</h2>
-            <img class="image-responsive" src="./src/images/medidores/medidores-quiz.png" alt="QUAL O MELHOR PRODUTO PARA MIM?" />
-          </a>
+      <div class="acesso landing__quiz area area__container">
+        <div class="quiz__questions">
+          <div class="quiz__questions--interactive"></div>
+          <div class="quiz__questions--start">
+            <h2>
+              QUAL É O MELHOR<br />
+              PRODUTO PRA MIM?
+            </h2>
+            <p>
+              Responda as perguntas a seguir e descubra qual é<br />
+              o <strong>Medidor Bosch</strong> que se encaixa em sua<br />
+              necessidade.
+            </p>
+            <button class="btn-start">CLIQUE E DESCUBRA</button>
+          </div>
         </div>
-      </section>
+        <div class="quiz__banner">
+          <div class="quiz__product">
+            <div class="quiz__product--single">
+              <div class="quiz__product--details">
+                <img src="" alt="" />
+                <div class="quiz__product--text">
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </div>
+              <div class="quiz__product--buttons">
+                <a class="view-offer" href="#anchor">VER OFERTAS</a>
+                <button class="btn-redo">REFAZER QUIZ</button>
+              </div>
+            </div>
+            <ul class="quiz__product--multiple"></ul>
+            <div class="multiple multiple-button">
+              <button class="btn-redo multiple">REFAZER QUIZ</button>
+            </div>
+          </div>
+          <img class="hide--sm" src="https://boschferramentasbrasil.vteximg.com.br/arquivos/medidores-banner-desk-8.png" alt="" /><img
+            class="hide--md hide--lg"
+            src="https://boschferramentasbrasil.vteximg.com.br/arquivos/medidores-banner-mob-8.png"
+            alt=""
+          />
+        </div>
+      </div>
     </main>
 
     <div class="overlay hidden"></div>

@@ -16,3 +16,19 @@
     text-align: center;
   }
 }
+
+.LPDetectores .shelf--default h2 {
+  display: block;
+}
+
+@media screen and (min-width: 1025px) {
+  .LPNiveladores .btn {
+    width: 362px;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+}
+
+.landing__shelf--list {
+  padding: 0;
+}
