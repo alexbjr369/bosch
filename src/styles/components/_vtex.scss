@@ -2,12 +2,22 @@
   z-index: 1;
 }
 
-.LPDetectores__area-shelf,
 .LPNiveladores__shelfProduct {
   max-width: 95.4rem;
   margin: 0 auto;
   padding: 0 3rem;
 
+  h2 {
+    @include fluid-property(font-size, 1.8rem, 2.8rem);
+    margin-top: 2.7rem;
+    margin-bottom: 2.7rem;
+    color: #1e1e1e;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.slider {
   h2 {
     @include fluid-property(font-size, 1.8rem, 2.8rem);
     margin-top: 2.7rem;
