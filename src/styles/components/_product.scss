@@ -58,6 +58,12 @@
       align-items: initial;
       padding: 2.5rem 2.2rem 0 2.2rem;
     }
+
+    img {
+      @media (max-width: map.get($breakpoints, md)) {
+        margin: 0 auto;
+      }
+    }
   }
 
   &__subheading {
