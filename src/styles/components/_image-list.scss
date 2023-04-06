@@ -3,6 +3,11 @@
 .image-list {
   padding: 0 6.6rem 2.5rem 6.6rem;
 
+  &--detectores {
+    max-width: 74.1rem;
+    margin: 0 auto;
+  }
+
   @media (max-width: map.get($breakpoints, md)) {
     padding: 0 2.2rem 2.5rem 2.2rem;
   }

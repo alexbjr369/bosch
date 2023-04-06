@@ -93,8 +93,8 @@
 
   &__button {
     @include fluid-property(font-size, 1.3rem, 1.6rem);
-    @include fluid-property(width, 13.3rem, 17rem);
-    @include fluid-property(height, 2.7rem, 3.5rem);
+    @include fluid-property(width, 16.3rem, 19rem);
+    @include fluid-property(height, 3.7rem, 4.5rem);
     margin-top: 5.4rem;
 
     @media (max-width: map.get($breakpoints, md)) {

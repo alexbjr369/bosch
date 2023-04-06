@@ -75,7 +75,9 @@
   }
 
   &__highlight {
-    font-weight: 700;
+    color: var(--#{$namespace}-color-primary);
+    font-weight: 400;
+    @include fluid-property(font-size, 1.2rem, 1.5rem);
   }
 
   &__terceiros {
