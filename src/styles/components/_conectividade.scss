@@ -12,6 +12,10 @@
     padding: 2.2rem 3.2rem;
   }
 
+  &__p-highlight {
+    font-weight: 700;
+  }
+
   &__left {
     flex: 1;
   }
@@ -19,6 +23,7 @@
   &__center {
     &_desktop {
       display: block;
+      padding: 0 5rem;
 
       @media (max-width: map.get($breakpoints, md)) {
         display: none;
