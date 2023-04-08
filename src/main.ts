@@ -40,5 +40,8 @@ for (let i = 0; i < btnsOpenModalEl.length; i++) {
 }
 
 const teste = document.querySelector('.js-btn-quiz')!;
-(teste as HTMLElement).innerText = '';
-(teste as HTMLElement).innerText = 'Linhas 360° com pontos de prumo e de referência nas laterais';
+
+if (teste) {
+  (teste as HTMLElement).innerText = '';
+  (teste as HTMLElement).innerText = 'Linhas 360° com pontos de prumo e de referência nas laterais';
+}
