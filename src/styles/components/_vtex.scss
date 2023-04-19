@@ -47,3 +47,10 @@ main {
 .landing__shelf--list {
   padding: 0;
 }
+
+.LPMedidores .landing__quiz .quiz__banner img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
